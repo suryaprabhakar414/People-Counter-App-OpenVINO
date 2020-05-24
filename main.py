@@ -185,8 +185,10 @@ def infer_on_stream(args, client):
             if current_count > last_count:
                 start_time = time.time()
                 
-            if current_count < last_count: 
-                if(last_last_count>=last_count): #To avoid False Negatives
+            if current_count < last_count: #To avoid False Negatives
+                if(last_last_count<last_count):
+                    continue
+                else:                   
                     duration = int(time.time() - start_time)
                     total_count = total_count + last_count - current_count
                     client.publish("person", json.dumps({"total": total_count}))
