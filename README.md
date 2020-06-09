@@ -89,7 +89,7 @@ It is up to you to decide on what model to use for the application. You need to 
 
 Note that you may need to do additional processing of the output to handle incorrect detections, such as adjusting confidence threshold or accounting for 1-2 frames where the model fails to see a person already counted and would otherwise double count.
 
-For this project I have used Faster_RCNN_Inception_V2. You can download various models from the following link:- https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_Convert_Model_From_TensorFlow.html
+For this project I have used Faster_RCNN_Inception_V2. You can download various models from this [link](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_Convert_Model_From_TensorFlow.html).
 
 ## Run the application
 
